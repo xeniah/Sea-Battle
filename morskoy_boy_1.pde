@@ -48,7 +48,7 @@ void draw() {
      target.drawTarget();
      drawTorpedoes();
   //   drawLerp();
-      println("drawn torpedoes");
+      // println("drawn torpedoes");
      if(instructionMode)
      {
        displayInstructions();
@@ -107,7 +107,7 @@ void drawTorpedoes()
 
 
 void keyReleased() {
-   println("key released");
+   // println("key released");
    if (keyCode == UP){
      if(currentTorpedo < 10 && !instructionMode)
        {
@@ -121,7 +121,7 @@ void keyReleased() {
 void checkKeys(){
   
   if (keyPressed) {
-    println("key pressed");
+    // println("key pressed");
     if (keyCode == RIGHT) {
       target.moveRight();
     }   
@@ -370,7 +370,7 @@ class Ship
      centerY = centerY + speed;
    }
    centerX = centerX + speed;
-   println("about to check width");
+   // println("about to check width");
    if ((centerX > width)) {
       centerX = -30;
       centerY = int(random(50, height-100));
@@ -415,7 +415,7 @@ class Ship
  
    
    
-   println("drawn image");
+   // println("drawn image");
    move();
  } 
 }
